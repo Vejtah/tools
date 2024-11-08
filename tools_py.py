@@ -1,6 +1,7 @@
 import random
 import math
 import pygame
+from manim import *
 
 class Tools:
     # math
@@ -45,6 +46,11 @@ class Tools:
                 counter = curr_frequency
                 num = i
         return num
+
+    # maimim
+    
+    def zoom(scale=2, runtime=1): #  add directly to scene
+            self.play(Group(*self.mobjects).animate.scale(scale), run_time=runtime)
 
 
 
